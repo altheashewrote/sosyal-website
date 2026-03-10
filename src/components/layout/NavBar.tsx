@@ -14,6 +14,7 @@ export default function NavBar() {
                     <Link href='/merch' className="hover:text-sosyal-red cursor-target">Merch</Link>
                 </div>
                 <div className="flex justify-center">
+                    <Link href='/'>
                     <Image
                         src='/images/logos/sosyal-logo-globe.png'
                         width={60}
@@ -21,6 +22,7 @@ export default function NavBar() {
                         alt='SOSYAL Globe Logo'
                         className="cursor-target"
                     />
+                    </Link>
                 </div>
                 <div className='flex gap-8 justify-end'>
                     <a className="hover:text-sosyal-red cursor-target" href="https://instagram.com/sosyalstages">Instagram</a>
