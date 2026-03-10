@@ -14,8 +14,8 @@
 /coverage
 
 # files
-public/videos
-public/images
+/public/videos
+/public/images
 
 # next.js
 /.next/
