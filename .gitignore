@@ -13,6 +13,10 @@
 # testing
 /coverage
 
+# files
+public/videos
+public/images
+
 # next.js
 /.next/
 /out/
