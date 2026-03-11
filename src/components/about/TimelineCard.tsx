@@ -11,21 +11,19 @@ interface TimelineCardProps {
 // todo: comment out all hovers on main div!
 export default function TimelineCard({date, name, desc, image}: TimelineCardProps) {
     return (
-        <div className="group relative w-screen h-50 overflow-hidden cursor-target">
-            <Image
-            src={image}
-            alt={desc}
-            fill
-            className="object-cover transition-all group-hover:grayscale"
-            />
-            <div className="absolute inset-0 flex flex-row justify-between text-ara-white px-20 py-10 items-center">
-                <div className="font-horizon text-4xl max-w-30 text-wrap">
-                    <h3>{date}</h3>
-                </div>
-                <div className="text-right flex flex-col gap-2 justify-end max-w-70 text-wrap">
-                    <h3 className="font-horizon text-3xl">{name}</h3>
-                    <p className="font-helvetica text-sm uppercase font-bold tracking-wider">{desc}</p> 
-                </div>
+        <div className="group flex flex-row justify-between relative border border-chromeangels-grey aspect-video max-w-140 cursor-target overflow-hidden">
+            <div className="group relative border border-chromeangels-grey overflow-hidden w-60 items-start justify-start">
+                <Image
+                src={image}
+                alt={desc}
+                fill
+                className="object-cover transition-all group-hover:grayscale"
+                />
+            </div>
+            <div className="border border-chromeangels-grey text-ara-white text-left w-78 flex flex-col gap-3 p-7">
+                <h2 className="font-horizon text-2xl">{date}</h2>
+                <h3 className="font-helvetica font-bold text-xl uppercase tracking-wide">{name} </h3>
+                <p className="font-helvetica font-light text-sm tracking-wider text-wrap">{desc}</p>
             </div>
         </div>
     )
