@@ -4,7 +4,9 @@ export interface Event {
     readonly eventId: number,
     eventName: string,
     eventLoc: string,
+    eventImg: string,
+    eventLink: string,
     eventHeadliner: string,
-    eventDate: Date,
+    eventDate: string,
     eventStatus: EventStatus,
 }
