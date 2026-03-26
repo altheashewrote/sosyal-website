@@ -1,12 +1,17 @@
 'use client'
+import { useState } from 'react'
 import Link from "next/link"
 import Image from "next/image"
 import TargetCursor from "../reactbit/TargetCursor"
 
 export default function NavBar() {
+    const [menuOpen, setMenuOpen] = useState(false)
+
     return (
-        <nav className="absolute top-0 left-0 w-full z-50 px-20 py-7">
-            <div className='grid grid-cols-3 items-center font-helvetica font-bold uppercase tracking-wide text-sm text-ara-white'>
+        <nav className={`absolute top-0 left-0 w-full z-50 px-5 lg:px-20 py-7 transition-colors ${menuOpen ? 'bg-slic3r-black/95' : ''}`}>
+
+            {/* ── Desktop layout (lg+) ── */}
+            <div className='hidden lg:grid grid-cols-3 items-center font-helvetica font-bold uppercase tracking-wide text-sm text-ara-white'>
                 <div className='flex gap-8'>
                     <Link href='/about' className="hover:text-sosyal-red cursor-target">Manifesto</Link>
                     <Link href='/artists' className="hover:text-sosyal-red cursor-target">Artists</Link>
@@ -15,19 +20,58 @@ export default function NavBar() {
                 </div>
                 <div className="flex justify-center">
                     <Link href='/'>
-                    <Image
-                        src='/images/logos/sosyal-logo-globe.png'
-                        width={60}
-                        height={60}
-                        alt='SOSYAL Globe Logo'
-                        className="cursor-target"
-                    />
+                        <Image
+                            src='/images/logos/sosyal-logo-globe.png'
+                            width={60}
+                            height={60}
+                            alt='SOSYAL Globe Logo'
+                            className="cursor-target"
+                        />
                     </Link>
                 </div>
-                <div className='flex gap-8 justify-end'>
+                <div className='flex gap-8 justify-end items-center'>
                     <a className="hover:text-sosyal-red cursor-target" href="https://instagram.com/sosyalstages">Instagram</a>
                     <a className="hover:text-sosyal-red cursor-target" href="https://tiktok.com/@sosyalstages">Tiktok</a>
                     <Image src='/cart.svg' width={16} height={16} className="invert brightness-0 cursor-target" alt="Your Cart"/>
+                </div>
+            </div>
+
+            {/* ── Mobile / small-desktop header row (below lg) ── */}
+            <div className="flex lg:hidden items-center justify-between">
+                <Link href='/' onClick={() => setMenuOpen(false)}>
+                    <Image
+                        src='/images/logos/sosyal-logo-globe.png'
+                        width={45}
+                        height={45}
+                        alt='SOSYAL Globe Logo'
+                        className="cursor-target"
+                    />
+                </Link>
+
+                {/* Hamburger button */}
+                <button
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label="Toggle menu"
+                    className="cursor-target flex flex-col justify-center gap-1.5 p-1"
+                >
+                    <span className={`block w-6 h-0.5 bg-ara-white transition-all duration-300 origin-center ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+                    <span className={`block w-6 h-0.5 bg-ara-white transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+                    <span className={`block w-6 h-0.5 bg-ara-white transition-all duration-300 origin-center ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+                </button>
+            </div>
+
+            {/* ── Mobile dropdown menu ── */}
+            <div className={`lg:hidden overflow-hidden transition-all duration-300 ${menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className="flex flex-col gap-5 pt-6 pb-4 font-helvetica font-bold uppercase tracking-wide text-sm text-ara-white">
+                    <Link href='/about' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Manifesto</Link>
+                    <Link href='/artists' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Artists</Link>
+                    <Link href='/events' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Events</Link>
+                    <Link href='/merch' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Merch</Link>
+                    <div className="flex items-center gap-6 pt-2 border-t border-chromeangels-grey/30">
+                        <a className="hover:text-sosyal-red cursor-target" href="https://instagram.com/sosyalstages">Instagram</a>
+                        <a className="hover:text-sosyal-red cursor-target" href="https://tiktok.com/@sosyalstages">Tiktok</a>
+                        <Image src='/cart.svg' width={16} height={16} className="invert brightness-0 cursor-target" alt="Your Cart"/>
+                    </div>
                 </div>
             </div>
         </nav>

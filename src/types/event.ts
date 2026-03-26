@@ -10,3 +10,4 @@ export interface Event {
     eventDate: string,
     eventStatus: EventStatus,
 }
+

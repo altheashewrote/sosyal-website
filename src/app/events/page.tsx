@@ -29,11 +29,11 @@ const mockEvents: Event[] = [
 export default function Events() {
     return (
          <div className="flex flex-col min-h-screen items-center justify-center bg-slic3r-black font-sans dark:bg-slic3r-black">
-            <main className="relative w-screen min-h-screen flex flex-col px-25 pt-40 py-32 items-center">
-                <h2 className="font-horizon text-center text-ara-white text-4xl uppercase mb-16">
+            <main className="relative w-screen min-h-screen flex flex-col px-6 sm:px-12 md:px-16 lg:px-25 pt-32 md:pt-40 py-16 md:py-32 items-center animate-page-fade-in">
+                <h2 className="font-horizon text-center text-ara-white text-3xl md:text-4xl uppercase mb-10 md:mb-16">
                     Our Events
                 </h2>
-                <div className="relative items-center gap-5 flex flex-row">
+                <div className="flex flex-row flex-wrap justify-center gap-5">
                     {mockEvents.map(event => (
                         <EventCard
                         key={event.eventId}

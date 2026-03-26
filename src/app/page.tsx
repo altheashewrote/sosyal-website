@@ -24,13 +24,13 @@ export default function Home() {
     <div className="flex flex-col min-h-screen items-center justify-center bg-rave-black font-sans dark:bg-rave-black">
 
       {/* hero section */}
-      <main className="relative w-screen h-screen overflow-hidden">
+      <main className="relative w-screen min-h-screen overflow-hidden">
         <VideoBackground/>
 
         <div className="absolute inset-0 bg-black opacity-30"/>
 
         {/* content — absolutely positioned over the image */}
-        <div className="absolute inset-55 z-10 flex flex-col items-center gap-10 text-center text-white">
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-10 text-center text-white">
 
             {/* headline */}
             <h1 className="font-horizon text-5xl md:text-6xl top-0 text-ara-white uppercase leading-none tracking-tight cursor-target">
@@ -55,28 +55,28 @@ export default function Home() {
               />
         </div>
       </main>
-      <section className="relative w-screen h-auto bg-slic3r-black flex flex-col overflow-hidden p-17 gap-5">
+      <section className="relative w-screen min-h-screen bg-slic3r-black flex flex-col overflow-hidden p-8 lg:p-17 gap-5">
         <div className="flex flex-col gap-5 items-center">
-          <h2 className="font-horizon text-3xl text-ara-white text-center cursor-target">ROOTED IN COMMUNITY SINCE<br/> THE BEGINNING.</h2>
+          <h2 className="font-horizon text-2xl md:text-3xl text-ara-white text-center cursor-target">ROOTED IN COMMUNITY SINCE<br/> THE BEGINNING.</h2>
           <p className="font-helvetica text-md text-ara-white text-center uppercase font-bold tracking-wider">Bringing music lovers together, from boba shops to world-class stages.</p>
         </div>
-        <div className="flex flex-row justify-center">
-          <div className="flex flex-row justify-between gap-60 p-10">
-            <div className="flex flex-col items-start cursor-target">
+        <div className="flex flex-row items-center justify-center">
+          <div className="flex flex-col sm:flex-row justify-center sm:justify-between gap-10 sm:gap-16 lg:gap-40 p-6 sm:p-10 w-full max-w-5xl">
+            <div className="flex flex-col items-center sm:items-start cursor-target">
               <h3 className="font-horizon text-sosyal-red text-5xl">40+</h3>
-              <p className="font-helvetica font-semibold tracking-wider uppercase text-left text-ara-white">artists</p>
+              <p className="font-helvetica font-semibold tracking-wider uppercase text-ara-white">artists</p>
             </div>
-            <div className="flex flex-col items-start cursor-target">
+            <div className="flex flex-col items-center sm:items-start cursor-target">
               <h3 className="font-horizon text-sosyal-red text-5xl">20+</h3>
-              <p className="font-helvetica font-semibold tracking-wider uppercase text-left text-ara-white">venues & collectives</p>
+              <p className="font-helvetica font-semibold tracking-wider uppercase text-ara-white">venues & collectives</p>
             </div>
-            <div className="flex flex-col items-start cursor-target">
+            <div className="flex flex-col items-center sm:items-start cursor-target">
               <h3 className="font-horizon text-sosyal-red text-5xl">2500+</h3>
-              <p className="font-helvetica font-semibold tracking-wider uppercase text-left text-ara-white">sosyalites</p>
+              <p className="font-helvetica font-semibold tracking-wider uppercase text-ara-white">sosyalites</p>
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-center gap-7">
+        <div className="flex flex-row flex-wrap justify-center gap-5 lg:gap-7">
           <div className="overflow-hidden cursor-target">
             <Image
             src='/images/events/lion_headbang.jpg'
