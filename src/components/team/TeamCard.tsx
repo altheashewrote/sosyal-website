@@ -8,7 +8,7 @@ interface TeamCardProps {
 
 export default function TeamCard({name, pos, image}: TeamCardProps) {
     return (
-        <div className="group text-ara-white font-helvetica flex-col w-50 bg-transparent items-center justify-center text-center uppercase">
+        <div className="group text-ara-white font-helvetica flex-col w-full bg-transparent items-center justify-center text-center uppercase">
                 <div className="relative w-full h-70 overflow-hidden pb-10 cursor-target">
                     <Image
                         src={image}

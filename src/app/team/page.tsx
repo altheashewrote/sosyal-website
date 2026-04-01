@@ -3,11 +3,11 @@ import TeamCard from "@/src/components/team/TeamCard"
 export default function Team() {
     return (
         <div className="flex flex-col min-h-screen items-center justify-center bg-slic3r-black font-sans dark:bg-slic3r-black">
-            <main className="relative w-screen min-h-screen flex flex-col px-10 pt-40 py-32 items-center animate-page-fade-in">
-                <h2 className="font-horizon text-center text-ara-white text-4xl uppercase mb-16">
+            <main className="relative w-screen min-h-screen flex flex-col px-6 sm:px-12 md:px-16 lg:px-25 pt-32 md:pt-40 py-16 md:py-32 items-center animate-page-fade-in">
+                <h2 className="font-horizon text-center text-ara-white text-3xl md:text-4xl uppercase mb-10 md:mb-16">
                     Our Team
                 </h2>
-                <div className="grid grid-cols-5 gap-10 flex-wrap">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-center gap-7">
                     <TeamCard
                     image='/images/team/sardinas.jpg'
                     name='Chris Valiente'
