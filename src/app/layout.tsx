@@ -4,6 +4,14 @@ import "./globals.css";
 import NavBar from "../components/layout/NavBar";
 import Footer from "../components/layout/Footer";
 import TargetCursor from "../components/reactbit/TargetCursor";
+import {
+  Cursor,
+  CursorContainer,
+  CursorFollow,
+  CursorProvider,
+  type CursorFollowSide,
+  type CursorFollowAlign,
+} from "../components/animate-ui/primitives/animate/cursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,11 +38,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <TargetCursor 
-                spinDuration={3}
-                hideDefaultCursor
-                parallaxOn
-                hoverDuration={0.2}/>
         <NavBar/>
         {children}
         <Footer/>

@@ -26,13 +26,13 @@ export default function Artists() {
                     <div className="flex flex-row md:flex-col gap-6 md:gap-2 w-full md:w-32 shrink-0">
                         <button
                             onClick={() => setYear(1)}
-                            className={`uppercase tracking-wider font-helvetica cursor-target font-bold text-md text-left ${year === 1 ? 'text-ara-white' : 'text-chromeangels-grey'}`}
+                            className={`uppercase tracking-wider font-helvetica cursor-pointer font-bold text-md text-left ${year === 1 ? 'text-ara-white' : 'text-chromeangels-grey'}`}
                         >
                             Year One
                         </button>
                         <button
                             onClick={() => setYear(2)}
-                            className={`uppercase tracking-wider font-helvetica cursor-target font-bold text-md text-left ${year === 2 ? 'text-ara-white' : 'text-chromeangels-grey'}`}
+                            className={`uppercase tracking-wider font-helvetica cursor-pointer font-bold text-md text-left ${year === 2 ? 'text-ara-white' : 'text-chromeangels-grey'}`}
                         >
                             Year Two
                         </button>

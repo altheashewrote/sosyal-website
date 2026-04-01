@@ -17,6 +17,7 @@ export default function NavBar() {
                     <Link href='/artists' className="hover:text-sosyal-red cursor-target">Artists</Link>
                     <Link href='/events' className="hover:text-sosyal-red cursor-target">Events</Link>
                     <Link href='/merch' className="hover:text-sosyal-red cursor-target">Merch</Link>
+                    <Link href='/team' className="hover:text-sosyal-red cursor-target">Team</Link>
                 </div>
                 <div className="flex justify-center">
                     <Link href='/'>

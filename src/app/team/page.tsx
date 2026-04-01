@@ -7,26 +7,26 @@ export default function Team() {
                 <h2 className="font-horizon text-center text-ara-white text-4xl uppercase mb-16">
                     Our Team
                 </h2>
-                <div className="grid grid-cols-5 gap-10">
+                <div className="grid grid-cols-5 gap-10 flex-wrap">
                     <TeamCard
-                    image='/images/team/chrispynoy_press.jpg'
+                    image='/images/team/sardinas.jpg'
                     name='Chris Valiente'
-                    pos='Operations'
+                    pos='Operations, Artist'
                     />
                     <TeamCard
-                    image='/images/team/chrispynoy_press.jpg'
+                    image='/images/team/ara_press.jpg'
                     name='Ara Manuel'
-                    pos='Events'
+                    pos='Events, Artist'
                     />
                     <TeamCard
                     image='/images/team/chrispynoy_press.jpg'
                     name='Donovan Yang'
-                    pos='Events'
+                    pos='Events, Artist'
                     />
                     <TeamCard
                     image='/images/team/chrispynoy_press.jpg'
                     name='Robbie Ayala'
-                    pos='Production'
+                    pos='Production, Artist'
                     />
                     <TeamCard
                     image='/images/team/chrispynoy_press.jpg'
@@ -36,17 +36,22 @@ export default function Team() {
                     <TeamCard
                     image='/images/team/001.png'
                     name='Althea Rosales'
-                    pos='UX and Visual Design'
+                    pos='Web Dev/UX, Design, Artist'
                     />
                     <TeamCard
-                    image='/images/team/chrispynoy_press.jpg'
+                    image='/images/team/IMG_1898.jpeg'
                     name='Wilson Chang'
+                    pos='Public Relations'
+                    />
+                    <TeamCard
+                    image='/images/team/vowel_remover.jpg'
+                    name='Kevin Cervantes'
                     pos='Public Relations'
                     />
                     <TeamCard
                     image='/images/team/SOYSAL_IDP_LNY7.jpg'
                     name='Kaili Shan'
-                    pos='Merchandise'
+                    pos='Merchandise, Artist'
                     />
                 </div>
             </main>
