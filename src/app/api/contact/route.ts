@@ -1,6 +1,7 @@
 import { Resend } from 'resend'
 
 export async function POST(req: Request) {
+    console.log('API key present:', !!process.env.RESEND_API_KEY)
     console.log('Contact API route hit')
     try {
         const resend = new Resend(process.env.RESEND_API_KEY)

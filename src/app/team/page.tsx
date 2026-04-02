@@ -55,6 +55,16 @@ export default function Team() {
                     name='@kaleswitch'
                     pos='Project Manager'
                     />
+                    <TeamCard
+                    image='/images/team/kalez01.png'
+                    name='@harabaz808'
+                    pos='Production'
+                    />
+                    <TeamCard
+                    image='/images/team/kalez01.png'
+                    name='@tagalogedm'
+                    pos='Production'
+                    />
                 </div>
             </main>
         </div>
