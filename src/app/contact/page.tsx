@@ -68,7 +68,7 @@ export default function Contact() {
                         <textarea name="message" required className="border border-ara-white bg-ara-white text-slic3r-black font-helvetica text-sm p-2 h-60 md:h-50 md:w-153 resize-none leading-none align-top"/>
                     </div>
                     <div className="py-5 flex flex-col gap-3">
-                        <Button intent="secondary" size="md" disabled={status === 'loading'}>
+                        <Button intent="secondary" size="md" type="submit" disabled={status === 'loading'}>
                             {status === 'loading' ? 'SENDING...' : 'SEND MESSAGE'}
                         </Button>
                         {status === 'success' && (
