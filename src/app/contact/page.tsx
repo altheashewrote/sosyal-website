@@ -10,18 +10,6 @@ export default function Contact() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const handleChangeName = (event) => {
-        setName(event.target.value);
-    }
-
-    const handleChangeEmail = (event) => {
-        setEmail(event.target.value);
-    }
-
-    const handleChangeMessage = (event) => {
-        setMessage(event.target.value);
-    }
-
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setStatus('loading');
@@ -39,7 +27,7 @@ export default function Contact() {
             const res = await fetch('/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, email, message })
+                body: JSON.stringify(newMsg)
             });
 
             const data = await res.json();
@@ -68,16 +56,16 @@ export default function Contact() {
                     <div className="flex flex-row gap-3">
                         <div className="flex flex-col">
                             <p className="text-xs font-helvetica text-ara-white uppercase">Full Name</p>
-                            <input type="text" required value={name} onChange={handleChangeName} className="border border-ara-white bg-ara-white text-slic3r-black font-helvetica text-sm p-1 px-2 md:w-75"/>
+                            <input type="text" required name="name" className="border border-ara-white bg-ara-white text-slic3r-black font-helvetica text-sm p-1 px-2 md:w-75"/>
                         </div>
                         <div className="flex flex-col">
                             <p className="text-xs font-helvetica text-ara-white uppercase">Email</p>
-                            <input type="text" required value={email} onChange={handleChangeEmail} className="border border-ara-white bg-ara-white text-slic3r-black font-helvetica text-sm p-1 px-2 md:w-75"/>
+                            <input type="text" required name="email" className="border border-ara-white bg-ara-white text-slic3r-black font-helvetica text-sm p-1 px-2 md:w-75"/>
                         </div>
                     </div>
                     <div className="flex flex-col">
                         <p className="text-xs font-helvetica text-ara-white uppercase">Message</p>
-                        <textarea value={message} required onChange={handleChangeMessage} className="border border-ara-white bg-ara-white text-slic3r-black font-helvetica text-sm p-2 h-60 md:h-50 md:w-153 resize-none leading-none align-top"/>
+                        <textarea name="message" required className="border border-ara-white bg-ara-white text-slic3r-black font-helvetica text-sm p-2 h-60 md:h-50 md:w-153 resize-none leading-none align-top"/>
                     </div>
                     <div className="py-5 flex flex-col gap-3">
                         <Button intent="secondary" size="md" disabled={status === 'loading'}>
