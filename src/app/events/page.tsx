@@ -15,6 +15,7 @@ async function getPoshEvents(): Promise<Event[]> {
         return []
     }
 
+    // maps API response to event, defined in types/event.ts
     return data.events.map((e: any) => ({
         id: e.id,
         name: e.name,
@@ -39,18 +40,21 @@ async function getPoshEvents(): Promise<Event[]> {
     }))
 }
 
+// defines the Events page
 export default async function Events() {
+    // events = await response from API
     const events = await getPoshEvents();
+    const todaysDate = new Date();
 
     return (
          <div className="flex flex-col min-h-screen items-center justify-center bg-slic3r-black font-sans dark:bg-slic3r-black">
             <main className="relative w-screen min-h-screen flex flex-col px-6 sm:px-12 md:px-16 lg:px-25 pt-32 md:pt-40 py-16 md:py-32 items-center animate-page-fade-in">
                 <h2 className="font-horizon text-center text-ara-white text-3xl md:text-4xl uppercase mb-10 md:mb-16">
-                    Our Events
+                    Upcoming Events
                 </h2>
-                <div className="grid grid-cols-4 flex-wrap justify-center gap-5">
-                    {events.
-                    sort((a, b) => b.start.localeCompare(a.start)).
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 justify-center gap-7">
+                    {events.filter(event => new Date(event.start) >= todaysDate).
+                    sort((a, b) => a.start.localeCompare(b.start)).
                     map(event => (
                         <EventCard
                         key={event.id}

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Event } from '@/src/types/event'
+import Button from '../ui/Button'
 
 export default function EventCard({ event }: { event: Event }) {
 
@@ -16,22 +17,18 @@ export default function EventCard({ event }: { event: Event }) {
     const today = new Date();
 
     return (
-        <Link href={`https://posh.vip/e/${event.url}`} target='_blank' rel='noopener noreferrer' className="cursor-target">
-            <div className="group relative overflow-hidden">
+        <div className="flex flex-col border border-ara-white overflow-hidden p-5 gap-3">
+            <div className="w-full relative group h-84">
                 <Image
-                    src={event.flyer}
-                    alt={event.name}
-                    width={250}
-                    height={250}
-                    className={`object-cover transition-all duration-300 group-hover:scale-95 group-hover:opacity-25
-                        ${eventDate < today ? 'grayscale' : ''}`}
-                />
-                <div className="absolute inset-0 flex flex-col justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center tracking-wide font-helvetica uppercase text-ara-white text-sm gap-5">
-                    <h3 className="font-bold text-lg">{event.name}</h3>
-                    <p className="font-bold">{date}</p>
-                    <p className="font-bold">{event.venue.name}</p>
-                </div>
+            src={event.flyer}
+            alt={event.name}
+            fill
+            className="object-cover"
+            />
             </div>
-        </Link>
+            <p className="font-helvetica font-bold text-sm uppercase text-ara-white">{date}</p>
+            <h3 className="font-helvetica font-bold tracking-wider text-md uppercase text-ara-white">{event.name}</h3>
+           <Link href={`https://posh.vip/e/${event.url}`}><Button intent="secondary" size="md">Buy Tickets</Button></Link>
+        </div>
     )
 }

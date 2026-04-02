@@ -11,7 +11,7 @@ export default function NavBar() {
         <nav className={`absolute top-0 left-0 w-full z-50 px-5 lg:px-20 py-7 transition-colors ${menuOpen ? 'bg-slic3r-black/95' : ''}`}>
 
             {/* ── Desktop layout (lg+) ── */}
-            <div className='hidden lg:grid grid-cols-3 items-center font-helvetica font-bold uppercase tracking-wide text-sm text-ara-white'>
+            <div className='hidden lg:grid grid-cols-3 items-center font-helvetica font-bold uppercase tracking-wide text-sm text-ara-white py-2'>
                 <div className='flex gap-8'>
                     <Link href='/about' className="hover:text-sosyal-red cursor-target">Manifesto</Link>
                     <Link href='/artists' className="hover:text-sosyal-red cursor-target">Artists</Link>
@@ -22,15 +22,16 @@ export default function NavBar() {
                 <div className="flex justify-center">
                     <Link href='/'>
                         <Image
-                            src='/images/logos/sosyal-logo-globe.png'
-                            width={60}
-                            height={60}
-                            alt='SOSYAL Globe Logo'
+                            src='/images/logos/soz_white.svg'
+                            width={100}
+                            height={100}
+                            alt='SOSYAL Logo'
                             className="cursor-target"
                         />
                     </Link>
                 </div>
                 <div className='flex gap-8 justify-end items-center'>
+                    <Link href='/contact' className="hover:text-sosyal-red cursor-target">Contact</Link>
                     <a className="hover:text-sosyal-red cursor-target" href="https://instagram.com/sosyalstages">Instagram</a>
                     <a className="hover:text-sosyal-red cursor-target" href="https://tiktok.com/@sosyalstages">Tiktok</a>
                     <Image src='/cart.svg' width={16} height={16} className="invert brightness-0 cursor-target" alt="Your Cart"/>
@@ -41,9 +42,9 @@ export default function NavBar() {
             <div className="flex lg:hidden items-center justify-between">
                 <Link href='/' onClick={() => setMenuOpen(false)}>
                     <Image
-                        src='/images/logos/sosyal-logo-globe.png'
-                        width={45}
-                        height={45}
+                        src='/images/logos/soz_white.svg'
+                        width={100}
+                        height={100}
                         alt='SOSYAL Globe Logo'
                         className="cursor-target"
                     />
@@ -68,7 +69,9 @@ export default function NavBar() {
                     <Link href='/artists' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Artists</Link>
                     <Link href='/events' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Events</Link>
                     <Link href='/merch' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Merch</Link>
+                    <Link href='/team' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Team</Link>
                     <div className="flex items-center gap-6 pt-2 border-t border-chromeangels-grey/30">
+                        <Link href='/contact' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Contact</Link>
                         <a className="hover:text-sosyal-red cursor-target" href="https://instagram.com/sosyalstages">Instagram</a>
                         <a className="hover:text-sosyal-red cursor-target" href="https://tiktok.com/@sosyalstages">Tiktok</a>
                         <Image src='/cart.svg' width={16} height={16} className="invert brightness-0 cursor-target" alt="Your Cart"/>

@@ -1,8 +1,10 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../components/ui/Button";
 import LogoLoop from "../components/reactbit/LogoLoop";
 import VideoBackground from "../components/herosect/VideoBkg";
+import ScrollToTop from "react-scroll-to-top";
 
 const artistLogos = [
   { src: '/images/artists/ara_logo.png', alt: "ARA" },
@@ -22,6 +24,7 @@ const artistLogos = [
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center bg-rave-black font-sans dark:bg-rave-black">
+      <ScrollToTop smooth/>
 
       {/* hero section */}
       <main className="relative w-screen min-h-screen overflow-hidden">
@@ -43,7 +46,7 @@ export default function Home() {
             </Link>
         </div>
         <div className='absolute bottom-10 flex flex-col gap-6 text-center w-screen'>
-          <h3 className="font-helvetica font-bold text-lg text-ara-white tracking-wider">HELPING SKYROCKET ARTISTS LIKE</h3>
+          <h3 className="font-helvetica font-bold text-lg text-ara-white tracking-wider">ARTISTS THAT PLAYED FOR US</h3>
               <LogoLoop
               logos={artistLogos}
               speed={100}
@@ -57,8 +60,8 @@ export default function Home() {
       </main>
       <section className="relative w-screen min-h-screen bg-slic3r-black flex flex-col overflow-hidden p-8 lg:p-17 gap-5">
         <div className="flex flex-col gap-5 items-center">
-          <h2 className="font-horizon text-2xl md:text-3xl text-ara-white text-center cursor-target">ROOTED IN COMMUNITY SINCE<br/> THE BEGINNING.</h2>
-          <p className="font-helvetica text-md text-ara-white text-center uppercase font-bold tracking-wider">Bringing music lovers together, from boba shops to world-class stages.</p>
+          <h2 className="font-horizon text-2xl md:text-3xl text-ara-white text-center cursor-target">TAKING BACK WHAT<br/> BELONGS TO US.</h2>
+          <p className="font-helvetica text-md text-ara-white text-center uppercase font-bold tracking-wider">Bringing music lovers together, from boba shops to big venues.</p>
         </div>
         <div className="flex flex-row items-center justify-center">
           <div className="flex flex-col sm:flex-row justify-center sm:justify-between gap-10 sm:gap-16 lg:gap-40 p-6 sm:p-10 w-full max-w-5xl">

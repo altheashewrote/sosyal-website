@@ -6,8 +6,9 @@ import { ArtistList } from "@/src/data/artists";
 import ArtistCard from "@/src/components/artists/ArtistCard";
 import { useState } from "react";
 
-
+// defines the Artists page
 export default function Artists() {
+    /*sets default year to Year One -> for Year One artists*/
     const [year, setYear] = useState(1);
 
     return (

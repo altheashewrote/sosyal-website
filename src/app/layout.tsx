@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "../components/layout/NavBar";
 import Footer from "../components/layout/Footer";
 import TargetCursor from "../components/reactbit/TargetCursor";
+import ScrollToTop from "react-scroll-to-top";
 import {
   Cursor,
   CursorContainer,

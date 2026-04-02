@@ -9,7 +9,7 @@ export default function About() {
     return (
         <div className="flex flex-col min-h-screen items-center justify-center bg-slic3r-black font-sans dark:bg-slic3r-black">
             <main className="relative w-screen min-h-screen gap-15 items-center  animate-page-fade-in">
-                <div className="relative inset-y-35 items-center justify-center pb-25">
+                <div className="relative inset-y-35 items-center justify-center pb-32 md:pb-25">
                     <ScrollVelocity
                     texts={['SOSYAL MOVEMENT']}
                     velocity={100}
@@ -22,7 +22,7 @@ export default function About() {
                         <h3 className="uppercase font-light">–Julian Isorena, creatively known as ISOxo <br/> <br/> </h3>
                         <p className="font-regular">SOSYAL was built to create a real stage for the next generation of artists and creatives. <br/><br/>
                         Our goal is to bring local talent and national acts onto the same platform, giving artists the opportunity to gain experience, exposure, and grow their craft. <br/><br/>
-                        SOSYAL STAGES are built on collaboration, trust, and people who show up for each other. We believe strong communities are built by creatives supporting creatives.
+                        The SOSYAL MOVEMENT is built on collaboration, trust, and people who show up for each other. We believe strong communities are built by creatives supporting creatives.
                         <br/><br/>
                         While we're proud of our roots, SOSYAL is an inclusive movement focused on building opportunities and pushing the culture forward.
                         <br/><br/>
