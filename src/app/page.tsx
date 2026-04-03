@@ -5,6 +5,7 @@ import Button from "../components/ui/Button";
 import LogoLoop from "../components/reactbit/LogoLoop";
 import VideoBackground from "../components/herosect/VideoBkg";
 import ScrollToTop from "react-scroll-to-top";
+import ScrollToTopBtn from "../components/layout/ScrollToTopBtn";
 
 const artistLogos = [
   { src: '/images/artists/ara_logo.png', alt: "ARA" },
@@ -23,9 +24,7 @@ const artistLogos = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-rave-black font-sans dark:bg-rave-black">
-      <ScrollToTop smooth/>
-
+    <div className="flex flex-col min-h-screen items-center justify-center bg-rave-black font-sans bg-slic3r-black dark:bg-rave-black">
       {/* hero section */}
       <main className="relative w-screen min-h-screen overflow-hidden">
         <VideoBackground/>

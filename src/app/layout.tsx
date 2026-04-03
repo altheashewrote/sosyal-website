@@ -3,16 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/layout/NavBar";
 import Footer from "../components/layout/Footer";
-import TargetCursor from "../components/reactbit/TargetCursor";
-import ScrollToTop from "react-scroll-to-top";
-import {
-  Cursor,
-  CursorContainer,
-  CursorFollow,
-  CursorProvider,
-  type CursorFollowSide,
-  type CursorFollowAlign,
-} from "../components/animate-ui/primitives/animate/cursor";
+import ScrollToTopBtn from "../components/layout/ScrollToTopBtn";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +33,7 @@ export default function RootLayout({
         <NavBar/>
         {children}
         <Footer/>
+        <ScrollToTopBtn/>
       </body>
     </html>
   );
