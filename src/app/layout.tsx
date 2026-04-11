@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SOSYAL STAGES",
-  description: "Setting the stage.",
+  title: "SOSYAL MOVEMENT",
+  description: "We keep it SOSYAL.",
 };
 
 export default function RootLayout({
