@@ -1,10 +1,23 @@
 export default function MadeByHumans() {
     return (
-        <div className="flex flex-col min-h-screen bg-slic3r-black font-sans">
-            <main className="flex flex-col min-h-screen px-6 sm:px-12 md:px-16 lg:px-25 pt-32 md:pt-40 py-16 md:py-32 justify-center items-center animate-page-fade-in">
-                <h3 className="font-horizon text-ara-white text-center text-2xl md:text-3xl">This page is under construction. <br/>
-                Please check back later!</h3>
-            </main>
-        </div>
+        <div className="flex flex-col min-h-screen items-center justify-center bg-slic3r-black font-sans dark:bg-slic3r-black">
+                    <main className="relative w-screen min-h-screen gap-15 items-center pt-20 animate-page-fade-in">
+                        <div className="relative flex flex-col items-center justify-between gap-5 p-8 md:p-30">
+                            <div className="flex flex-col max-w-200 font-helvetica text-ara-white text-md tracking-wide text-center text-pretty">
+                                <h3 className="uppercase font-bold">THIS WEBSITE WAS MADE BY HUMANS.</h3>
+                                <h3 className="uppercase font-light">No artificial intelligence was used in the design or development of this website.<br/> <br/> </h3>
+                                <p className="font-regular">
+                                    We acknowledge that AI is being increasingly used as a tool in many different fields, ranging from cancer research, finance, rapid development, and more. <br/><br/>
+                                    Unfortunately, we've also seen a rise in AI being used to substitute creativity, whether it's in the form of AI-generated flyers, music, or writing. <br/><br/>
+                                    As exciting of a field AI is, we also believe in human experience, expression, and touch as an inalienable part of creativity. Any work that is AI-generated, be it an event poster or a website design,
+                                    is at best able to replicate and synthesise what humans already made, albeit without any emotion or synthesis of any worldview. <br/><br/>
+                                    We didn't simply just code a website ourselves — we made art. <br/><br/>
+                                    No AI was used in the design of this website. Never has, never will. <br/><br/>
+                                    —SOSYAL MOVEMENT
+                                </p>
+                            </div>
+                        </div>
+                    </main>
+                </div>
     )
 }

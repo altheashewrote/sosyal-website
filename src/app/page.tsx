@@ -36,7 +36,7 @@ export default function Home() {
 
             {/* headline */}
             <h1 className="font-horizon text-5xl md:text-6xl top-0 text-ara-white uppercase leading-none tracking-tight cursor-target">
-                SETTING<br />THE<br />STAGE
+                WE KEEP<br />IT<br />SOSYAL
             </h1>
 
                 {/* CTA button */}
@@ -81,7 +81,7 @@ export default function Home() {
         <div className="flex flex-row flex-wrap justify-center gap-5 lg:gap-7">
           <div className="overflow-hidden cursor-target">
             <Image
-            src='/images/events/lion_headbang.jpg'
+            src='/images/events/lion_headbang.JPG'
             alt="Lion Headbanging at LNY 2/21/26"
             width={250}
             height={250}

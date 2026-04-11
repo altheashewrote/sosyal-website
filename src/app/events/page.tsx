@@ -6,17 +6,21 @@ import EventCard from "@/src/components/events/EventCard";
 export const revalidate = 3600;
 
 async function getPoshEvents(): Promise<Event[]> {
-    const res = await fetch('https://posh.vip/api/web/v2/util/group_url/SOSYALSTAGES')
-    const data = await res.json()
+    const groups = [
+        'SOSYALSTAGES',
+        'the-loud-mouths'  // replace with their actual Posh group URL // replace with their actual Posh group URL
+    ]
 
-    // events is at data.events, not data.group.events
-    if (!data?.events) {
-        console.error('Events not found in response.')
-        return []
-    }
+    const responses = await Promise.all(
+        groups.map(group =>
+            fetch(`https://posh.vip/api/web/v2/util/group_url/${group}`)
+                .then(res => res.json())
+        )
+    )
 
-    // maps API response to event, defined in types/event.ts
-    return data.events.map((e: any) => ({
+    const allEvents = responses.flatMap(data => data.events ?? [])
+
+    return allEvents.map((e: any) => ({
         id: e.id,
         name: e.name,
         start: e.start,
@@ -52,7 +56,7 @@ export default async function Events() {
                 <h2 className="font-horizon text-center text-ara-white text-3xl md:text-4xl uppercase mb-10 md:mb-16">
                     Upcoming Events
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 justify-center gap-7">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-7">
                     {events.filter(event => new Date(event.start) >= todaysDate).
                     sort((a, b) => a.start.localeCompare(b.start)).
                     map(event => (

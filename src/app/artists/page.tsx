@@ -40,7 +40,7 @@ export default function Artists() {
                     </div>
 
                     {/* artist grid */}
-                    <div className="columns-2 sm:columns-3 lg:columns-4 gap-x-8 lg:gap-x-35 w-full">
+                    <div className="columns-2 md:columns-3 lg:columns-3 xl:columns-4 gap-x-8 lg:gap-x-35 w-full flex-wrap">
                         {ArtistList
                             .filter(artist => artist.artistYear === year)
                             .sort((a, b) => a.artistName.localeCompare(b.artistName))

@@ -17,12 +17,12 @@ export default function NavBar() {
                     <Link href='/artists' className="hover:text-sosyal-red cursor-target">Artists</Link>
                     <Link href='/events' className="hover:text-sosyal-red cursor-target">Events</Link>
                     <Link href='/merch' className="hover:text-sosyal-red cursor-target">Merch</Link>
-                    <Link href='/team' className="hover:text-sosyal-red cursor-target">Team</Link>
+                    {/*<Link href='/team' className="hover:text-sosyal-red cursor-target">Team</Link>*/}
                 </div>
                 <div className="flex justify-center">
                     <Link href='/'>
                         <Image
-                            src='/images/logos/soz_white.svg'
+                            src='https://res.cloudinary.com/dmw0dgiw0/image/upload/v1775756596/soz_white_vrjxkd.svg'
                             width={100}
                             height={100}
                             alt='SOSYAL Logo'
@@ -39,7 +39,7 @@ export default function NavBar() {
             </div>
 
             {/* ── Mobile / small-desktop header row (below lg) ── */}
-            <div className="flex lg:hidden items-center justify-between">
+            <div className="flex lg:hidden items-center justify-between px-5">
                 <Link href='/' onClick={() => setMenuOpen(false)}>
                     <Image
                         src='/images/logos/soz_white.svg'
@@ -63,7 +63,7 @@ export default function NavBar() {
             </div>
 
             {/* ── Mobile dropdown menu ── */}
-            <div className={`lg:hidden overflow-hidden transition-all duration-300 ${menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+            <div className={`lg:hidden overflow-hidden transition-all duration-300 px-5 ${menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="flex flex-col gap-5 pt-6 pb-4 font-helvetica font-bold uppercase tracking-wide text-sm text-ara-white">
                     <Link href='/about' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Manifesto</Link>
                     <Link href='/artists' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Artists</Link>
