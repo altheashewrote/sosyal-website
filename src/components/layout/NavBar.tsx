@@ -42,7 +42,7 @@ export default function NavBar() {
             <div className="flex lg:hidden items-center justify-between px-5">
                 <Link href='/' onClick={() => setMenuOpen(false)}>
                     <Image
-                        src='/images/logos/soz_white.svg'
+                        src='https://res.cloudinary.com/dmw0dgiw0/image/upload/v1775961162/sozwhite_vl3pmk.png'
                         width={100}
                         height={100}
                         alt='SOSYAL Globe Logo'
