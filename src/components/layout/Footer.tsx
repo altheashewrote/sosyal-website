@@ -13,7 +13,7 @@ export default function Footer() {
                 </h3>
                 <div className="cursor-target">
                     <Button intent="primary" size="md">
-                        <a href="https://discord.gg/ZNMVGxMbGU">JOIN OUR DISCORD!</a>
+                        <a href="https://discord.gg/6CkvwR3RrV">JOIN OUR DISCORD!</a>
                     </Button>
                 </div>
             </div>
