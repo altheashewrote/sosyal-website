@@ -324,5 +324,23 @@ export const ArtistList: Artist[] = [
         artistName: "Rio Sky",
         artistGenre: "Hardstyle",
         artistYear: 2,
+    },
+    {
+        artistId: 56,
+        artistName: "Viceversa",
+        artistGenre: "Trap",
+        artistYear: 1,
+    },
+    {
+        artistId: 57,
+        artistName: "VJ",
+        artistGenre: "Dubstep",
+        artistYear: 2,
+    },
+    {
+        artistId: 58,
+        artistName: "Supreme_Asian",
+        artistGenre: "Dubstep",
+        artistYear: 2,
     }
 ]

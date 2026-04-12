@@ -22,7 +22,7 @@ export default function NavBar() {
                 <div className="flex justify-center">
                     <Link href='/'>
                         <Image
-                            src='https://res.cloudinary.com/dmw0dgiw0/image/upload/v1775756596/soz_white_vrjxkd.svg'
+                            src='https://res.cloudinary.com/dmw0dgiw0/image/upload/v1775961162/sozwhite_vl3pmk.png'
                             width={100}
                             height={100}
                             alt='SOSYAL Logo'

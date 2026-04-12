@@ -14,6 +14,12 @@ const nextConfig: NextConfig = {
         hostname: 'posh-images-originals-production.s3.amazonaws.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/**',
       }
     ]
   }
