@@ -40,9 +40,9 @@ export default function Home() {
             </h1>
 
                 {/* CTA button */}
-            <Link href="/about" className="cursor-target">
-                <Button intent="primary" size="lg">LEARN MORE</Button>
-            </Link>
+            {/*<Link href="/about" className="cursor-target">*/}
+                <a href="https://discord.gg/6CkvwR3RrV"><Button intent="primary" size="lg">JOIN OUR DISCORD!</Button></a>
+            {/*</Link>*/}
         </div>
         <div className='absolute bottom-10 flex flex-col gap-6 text-center w-screen'>
           <h3 className="font-helvetica font-bold text-lg text-ara-white tracking-wider">ARTISTS THAT PLAYED FOR US</h3>

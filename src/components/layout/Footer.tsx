@@ -17,7 +17,7 @@ export default function Footer() {
                     </Button>
                 </div>
                 <div className="flex flex-col gap-1 pt-3">
-                    <p className="font-helvetica text-xs text-left font-semibold tracking-wider text-ara-white">THIS WEBSITE WAS NOT AI-GENERATED.</p>
+                    <p className="font-helvetica text-xs text-left font-semibold tracking-wider text-ara-white">THIS WEBSITE WAS MADE BY HUMANS, NOT AI-GENERATED.</p>
                     <Link href="/about/made_by_humans" className="font-helvetica text-xs font-semibold tracking-wider text-ara-white underline hover:text-sosyal-red">LEARN MORE</Link>
                 </div>
             </div>
