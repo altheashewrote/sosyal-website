@@ -10,10 +10,9 @@ export default function NavBar() {
     return (
         <nav className={`absolute top-0 left-0 w-full z-50 px-5 lg:px-20 py-7 transition-colors ${menuOpen ? 'bg-slic3r-black/95' : ''}`}>
 
-            {/* ── Desktop layout (lg+) ── */}
             <div className='hidden lg:grid grid-cols-3 items-center font-helvetica font-bold uppercase tracking-wide text-sm text-ara-white py-2'>
                 <div className='flex gap-8'>
-                    <Link href='/about' className="hover:text-sosyal-red cursor-target">Manifesto</Link>
+                    {/*<Link href='/about' className="hover:text-sosyal-red cursor-target">Manifesto</Link>*/}
                     <Link href='/artists' className="hover:text-sosyal-red cursor-target">Artists</Link>
                     <Link href='/events' className="hover:text-sosyal-red cursor-target">Events</Link>
                     <Link href='/merch' className="hover:text-sosyal-red cursor-target">Merch</Link>
@@ -62,7 +61,6 @@ export default function NavBar() {
                 </button>
             </div>
 
-            {/* ── Mobile dropdown menu ── */}
             <div className={`lg:hidden overflow-hidden transition-all duration-300 px-5 ${menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="flex flex-col gap-5 pt-6 pb-4 font-helvetica font-bold uppercase tracking-wide text-sm text-ara-white">
                     <Link href='/about' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Manifesto</Link>

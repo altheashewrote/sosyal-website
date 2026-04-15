@@ -335,12 +335,30 @@ export const ArtistList: Artist[] = [
         artistId: 57,
         artistName: "VJ",
         artistGenre: "Dubstep",
-        artistYear: 2,
+        artistYear: 1,
     },
     {
         artistId: 58,
         artistName: "Supreme_Asian",
         artistGenre: "Dubstep",
+        artistYear: 1,
+    },
+    {
+        artistId: 59,
+        artistName: "Chilman Gun",
+        artistGenre: "Hardstyle",
         artistYear: 2,
-    }
+    },
+    {
+        artistId: 60,
+        artistName: "Senza",
+        artistGenre: "Dubstep",
+        artistYear: 2,
+    },
+    {
+        artistId: 61,
+        artistName: "RayRay",
+        artistGenre: "Techno",
+        artistYear: 2,
+    },
 ]

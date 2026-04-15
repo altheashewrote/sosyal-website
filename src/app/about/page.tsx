@@ -31,7 +31,6 @@ export default function About() {
                 <h3 className="font-horizon text-3xl text-ara-white text-center mb-20">YEAR ONE TIMELINE</h3>
 
                 <div className="relative">
-                    {/* center line — hidden on mobile, visible on md+ */}
                     <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-chromeangels-grey -translate-x-1/2" />
 
                     <div className="flex flex-col gap-12">
