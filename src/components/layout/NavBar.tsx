@@ -63,11 +63,11 @@ export default function NavBar() {
 
             <div className={`lg:hidden overflow-hidden transition-all duration-300 px-5 ${menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="flex flex-col gap-5 pt-6 pb-4 font-helvetica font-bold uppercase tracking-wide text-sm text-ara-white">
-                    <Link href='/about' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Manifesto</Link>
+                    {/*<Link href='/about' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Manifesto</Link>*/}
                     <Link href='/artists' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Artists</Link>
                     <Link href='/events' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Events</Link>
                     <Link href='/merch' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Merch</Link>
-                    <Link href='/team' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Team</Link>
+                    {/*<Link href='/team' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Team</Link>*/}
                     <div className="flex items-center gap-6 pt-2 border-t border-chromeangels-grey/30">
                         <Link href='/contact' onClick={() => setMenuOpen(false)} className="hover:text-sosyal-red cursor-target">Contact</Link>
                         <a className="hover:text-sosyal-red cursor-target" href="https://instagram.com/sosyalstages">Instagram</a>
