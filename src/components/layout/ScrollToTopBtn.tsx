@@ -25,7 +25,7 @@ export default function ScrollToTopBtn() {
         <div>
             {backToTop && (
                 <button
-                    className="bg-slic3r-black font-helvetica cursor-pointer font-bold text-sm text-ara-white border border-ara-white hover:bg-sosyal-red uppercase tracking-wider fixed bottom-6 right-6 px-4 py-2 z-50"
+                    className="bg-slic3r-black font-helvetica cursor-pointer font-bold text-sm text-ara-white border border-ara-white hover:bg-sosyal-red uppercase fixed bottom-6 right-6 px-4 py-2 z-50"
                     onClick={scrollUp}
                 >
                     Back To Top

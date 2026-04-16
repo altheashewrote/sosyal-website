@@ -6,7 +6,7 @@ const button = cva(
         variants: {
             intent: {
                 primary: 'bg-sosyal-red font-horizon hover:bg-bass-blue',
-                secondary: 'bg-rave-black font-helvetica border border-ara-white tracking-wider font-bold hover:border-none hover:bg-sosyal-red',
+                secondary: 'bg-rave-black font-helvetica border border-ara-white font-bold hover:border-none hover:bg-sosyal-red',
             },
             size: {
                 sm:   'text-sm px-4 py-2',

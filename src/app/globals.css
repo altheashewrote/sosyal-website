@@ -19,11 +19,99 @@
 }
 
 @font-face {
-  font-family: "HelveticaNeue";
-  src: url("/fonts/HelveticaNeue.woff") format("woff");
-  font-weight: normal;
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-01.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Bold-02.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Italic-03.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-BoldItalic-04.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Condensed";
+  src: url("/fonts/HelveticaNeue-CondensedBold-05.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-UltraLight-06.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-UltraLightItalic-07.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-LightItalic-09.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Condensed";
+  src: url("/fonts/HelveticaNeue-CondensedBlack-10.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Medium-11.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-MediumItalic-12.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Thin-13.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -32,7 +120,8 @@
   --font-mono: var(--font-geist-mono);
   --font-lot: "LOT", sans-serif;
   --font-horizon: "Horizon", sans-serif;
-  --font-helvetica: "HelveticaNeue", Helvetica, sans-serif;
+  --font-helvetica: "Helvetica Neue", sans-serif;
+  --font-helvetica-condensed: "Helvetica Neue Condensed", sans-serif;
 
   --color-sosyal-red: #f30000;
   --color-stage-red: #d90001;

@@ -10,7 +10,7 @@ export default function NavBar() {
     return (
         <nav className={`absolute top-0 left-0 w-full z-50 px-5 lg:px-20 py-7 transition-colors ${menuOpen ? 'bg-slic3r-black/95' : ''}`}>
 
-            <div className='hidden lg:grid grid-cols-3 items-center font-helvetica font-bold uppercase tracking-wide text-sm text-ara-white py-2'>
+            <div className='hidden lg:grid grid-cols-3 items-center font-helvetica font-bold uppercase text-sm text-ara-white py-2'>
                 <div className='flex gap-8'>
                     {/*<Link href='/about' className="hover:text-sosyal-red cursor-target">Manifesto</Link>*/}
                     <Link href='/artists' className="hover:text-sosyal-red cursor-target">Artists</Link>

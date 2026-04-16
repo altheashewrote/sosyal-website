@@ -16,6 +16,8 @@ export default function EventCard({ event }: { event: Event }) {
     const eventDate = new Date(event.start);
     const today = new Date();
 
+    const eventUrl = event.source === 'tixr' ? event.url : `https://posh.vip/e/${event.url}`;
+
     return (
         <div className="flex flex-col border border-ara-white overflow-hidden p-5 gap-3">
             <div className="w-full relative group h-84">
@@ -26,9 +28,9 @@ export default function EventCard({ event }: { event: Event }) {
             className="object-cover"
             />
             </div>
-            <p className="font-helvetica font-bold text-sm uppercase text-ara-white">{date}</p>
-            <h3 className="font-helvetica font-bold tracking-wider text-md uppercase text-ara-white">{event.name}</h3>
-           <Link href={`https://posh.vip/e/${event.url}`}><Button intent="secondary" size="md">Buy Tickets</Button></Link>
+            <p className="font-helvetica font-medium text-sm uppercase text-ara-white">{date}</p>
+            <h3 className="font-helvetica-condensed text-2xl font-bold text-md uppercase text-ara-white">{event.name}</h3>
+           <Link href={eventUrl}><Button intent="secondary" size="md" className="uppercase">BUY TICKETS</Button></Link>
         </div>
     )
 }

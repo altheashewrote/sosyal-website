@@ -17,16 +17,16 @@ export default function Footer() {
                     </Button>
                 </div>
                 <div className="flex flex-col gap-1 pt-3">
-                    <p className="font-helvetica text-xs text-left font-semibold tracking-wider text-ara-white">THIS WEBSITE WAS MADE BY HUMANS, NOT AI-GENERATED.</p>
-                    <Link href="/about/made_by_humans" className="font-helvetica text-xs font-semibold tracking-wider text-ara-white underline hover:text-sosyal-red">LEARN MORE</Link>
+                    <p className="font-helvetica text-sm text-left font-medium text-ara-white">THIS WEBSITE WAS MADE BY HUMANS, NOT AI-GENERATED.</p>
+                    <Link href="/made_by_humans" className="font-helvetica text-sm font-semibold text-ara-white underline hover:text-sosyal-red">LEARN MORE</Link>
                 </div>
             </div>
             <div className="flex flex-col items-start">
-                <ul className="font-helvetica text-xs text-left md:text-right pb-10 md:py-0 tracking-wider font-semibold leading-8 text-ara-white">
+                <ul className="font-helvetica text-sm text-left md:text-right pb-10 md:py-0 font-semibold leading-9 text-ara-white">
                     <li><a className="hover:text-sosyal-red cursor-target" href="https://instagram.com/sosyalstages">INSTAGRAM</a></li>
                     <li><a className="hover:text-sosyal-red cursor-target" href="https://tiktok.com/@sosyalstages">TIKTOK</a></li>
                     <li><a className="hover:text-sosyal-red cursor-target" href="https://www.youtube.com/@SosyalStages">YOUTUBE</a></li>
-                    <li><p className="text-chromeangels-grey font-light">© 2026 SOSYAL. ALL RIGHTS RESERVED.</p></li>
+                    <li><p className="text-chromeangels-grey">© 2026 SOSYAL. ALL RIGHTS RESERVED.</p></li>
                 </ul>
             </div>
         </div>
