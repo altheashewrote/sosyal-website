@@ -349,4 +349,10 @@ export const ArtistList: Artist[] = [
         artistGenre: "Hardstyle",
         artistYear: 2,
     },
+    {
+        artistId: 60,
+        artistName: "YK ATHENA",
+        artistGenre: "Hardstyle",
+        artistYear: 1,
+    },
 ]
