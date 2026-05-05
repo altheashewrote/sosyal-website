@@ -1,6 +1,7 @@
 'use client'
 import Button from "@/src/components/ui/Button"
 import { useState } from "react"
+import * as fbq from "@/src/lib/fpixel"
 
 
 export default function Contact() {
@@ -11,8 +12,6 @@ export default function Contact() {
     const [message, setMessage] = useState('');
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setStatus('loading');
 
         const form = e.currentTarget;
         const formData = new FormData(form);
@@ -43,6 +42,13 @@ export default function Contact() {
         } catch (error) {
             setStatus('error');
         }
+        fbq.event('ContactFormSubmit', {
+            name,
+            email,
+            message,
+        });
+        e.preventDefault();
+        setStatus('loading');
     };
 
 

@@ -6,6 +6,8 @@ import LogoLoop from "../components/reactbit/LogoLoop";
 import VideoBackground from "../components/herosect/VideoBkg";
 import ScrollToTop from "react-scroll-to-top";
 import ScrollToTopBtn from "../components/layout/ScrollToTopBtn";
+import * as fbq from "../lib/fpixel";
+
 
 const artistLogos = [
   { src: '/images/artists/ara_logo.png', alt: "ARA" },

@@ -355,4 +355,46 @@ export const ArtistList: Artist[] = [
         artistGenre: "Hardstyle",
         artistYear: 1,
     },
+    {
+        artistId: 61,
+        artistName: "Senza",
+        artistGenre: "Dubstep",
+        artistYear: 2,
+    },
+    {
+        artistId: 62,
+        artistName: "Stvg",
+        artistGenre: "Dubstep",
+        artistYear: 2,
+    },
+    {
+        artistId: 63,
+        artistName: "Vrg",
+        artistGenre: "Dubstep",
+        artistYear: 2,
+    },
+    {
+        artistId: 64,
+        artistName: "Deadcrow",
+        artistGenre: "Trap",
+        artistYear: 2,
+    },
+    {
+        artistId: 65,
+        artistName: "Bad Void",
+        artistGenre: "Dubstep",
+        artistYear: 2,
+    },
+    {
+        artistId: 66,
+        artistName: "RayRay",
+        artistGenre: "Techno",
+        artistYear: 2,
+    },
+    {
+        artistId: 67,
+        artistName: "OlRazzleDazzlee",
+        artistGenre: "Dubstep",
+        artistYear: 2,
+    }
 ]

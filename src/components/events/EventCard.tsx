@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Event } from '@/src/types/event'
 import Button from '../ui/Button'
+import * as fbq from '@/src/lib/fpixel';
 
 export default function EventCard({ event }: { event: Event }) {
 
@@ -17,6 +18,14 @@ export default function EventCard({ event }: { event: Event }) {
     const today = new Date();
 
     const eventUrl = event.source === 'tixr' ? event.url : `https://posh.vip/e/${event.url}`;
+
+    const handleClick = () => {
+        fbq.event('EventClick', {
+            name: event.name,
+            date: event.start,
+            source: event.source
+        });
+    }
 
     return (
         <div className="flex flex-col border border-ara-white overflow-hidden p-5 gap-3">
