@@ -10,7 +10,7 @@ export async function POST(req: Request) {
         await resend.emails.send({
             from: 'onboarding@resend.dev',
             to: 'sosyalstages@gmail.com',
-            subject: `New message from ${name}`,
+            subject: `[SOSYAL MOVEMENT]: NEW MESSAGE FROM ${name}`,
             html: `
                 <h2>New Contact Form Submission</h2>
                 <p><strong>Name:</strong> ${name}</p>

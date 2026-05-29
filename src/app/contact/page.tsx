@@ -11,7 +11,8 @@ export default function Contact() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
 
         const form = e.currentTarget;
         const formData = new FormData(form);
@@ -30,6 +31,7 @@ export default function Contact() {
             });
 
             const data = await res.json();
+          
 
             if (data.success) {
                 setStatus('success');
@@ -47,8 +49,7 @@ export default function Contact() {
             email,
             message,
         });
-        e.preventDefault();
-        setStatus('loading');
+        
     };
 
 
@@ -79,7 +80,7 @@ export default function Contact() {
                         </Button>
                         {status === 'success' && (
                             <p className="font-helvetica text-green-400 text-sm uppercase tracking-wide uppercase">
-                                Message sent! We'll get back to you soon.
+                                Message sent! We&apos;ll get back to you soon.
                             </p>
                         )}
                         {status === 'error' && (
