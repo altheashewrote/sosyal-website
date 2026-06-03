@@ -26,6 +26,12 @@ const nextConfig: NextConfig = {
         hostname: 'static.tixr.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.posh.vip',
+        port: '',
+        pathname: '/**',
       }
     ]
   }
