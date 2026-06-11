@@ -17,21 +17,5 @@ export const tixrEvents: Event[] = [
         song: null,
         source: 'tixr' as const
   },
-  {
-      id: '185256',
-      name: 'DEAD SIGNAL SAN JOSE AFTERS',
-      start: '2026-06-21T04:00:00.000Z',
-      end: '2026-06-21T09:00:00.000Z',
-      timezone: 'America/Los_Angeles',
-      status: 'live',
-      flyer: 'https://images.posh.vip/originals/6a1e19b47781ca4446dc5d93',
-      url: 'https://posh.vip/e/dead-signal?t=sosyal',
-      venue: { name: 'Public Works', address: 'San Francisco, CA' },
-      ticketGroups: [{ name: 'GA' }],
-      shortDescription: null,
-      description: null,
-      song: null,
-      source: 'tixr' as const
-},
   
 ]

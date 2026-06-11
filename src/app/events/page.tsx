@@ -8,7 +8,7 @@ export const revalidate = 3600;
 
 async function getPoshEvents(): Promise<Event[]> {
     const groups = [
-        'the-loud-mouths',  // replace with their actual Posh group URL // replace with their actual Posh group URL
+        'SOSYALSTAGES' // replace with their actual Posh group URL // replace with their actual Posh group URL
     ]
 
     const responses = await Promise.all(

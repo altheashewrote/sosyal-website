@@ -17,7 +17,7 @@ export default function EventCard({ event }: { event: Event }) {
     const eventDate = new Date(event.start);
     const today = new Date();
 
-    const eventUrl = event.source === 'tixr' ? event.url : `https://posh.vip/e/${event.url}`;
+    const eventUrl = event.source === 'tixr' ? event.url : `https://posh.vip/e/${event.url}?t=sosyal`;
 
     const handleClick = () => {
         fbq.event('EventClick', {
