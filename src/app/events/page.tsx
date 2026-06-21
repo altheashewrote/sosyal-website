@@ -84,7 +84,8 @@ async function getAllEvents(): Promise<Event[]> {
 export default async function Events() {
     // events = await response from API
     const events = await getAllEvents();
-    const todaysDate = new Date();
+  const todaysDate = new Date();
+  todaysDate.setHours(0, 0, 0, 0);
 
     return (
          <div className="flex flex-col min-h-screen items-center justify-center bg-slic3r-black font-sans dark:bg-slic3r-black">
