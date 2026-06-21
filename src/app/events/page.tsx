@@ -84,8 +84,15 @@ async function getAllEvents(): Promise<Event[]> {
 export default async function Events() {
     // events = await response from API
     const events = await getAllEvents();
-  const todaysDate = new Date();
-  todaysDate.setHours(0, 0, 0, 0);
+    function getStartOfTodayPacific(): Date {
+        const now = new Date()
+        const pacificDateString = now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' })
+        const pacificDate = new Date(pacificDateString)
+        pacificDate.setHours(0, 0, 0, 0)
+        return pacificDate
+    }
+    
+    const todaysDate = getStartOfTodayPacific()
 
     return (
          <div className="flex flex-col min-h-screen items-center justify-center bg-slic3r-black font-sans dark:bg-slic3r-black">
