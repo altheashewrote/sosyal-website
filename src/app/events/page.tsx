@@ -4,7 +4,7 @@ import { Event } from "@/src/types/event";
 import EventCard from "@/src/components/events/EventCard";
 import { tixrEvents } from "@/src/data/TixrEvents";
 
-export const revalidate = 3600;
+export const revalidate = 0;
 
 async function getPoshEvents(): Promise<Event[]> {
     const groups = [
