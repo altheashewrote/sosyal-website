@@ -32,6 +32,12 @@ const nextConfig: NextConfig = {
         hostname: 'images.posh.vip',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'oaklandcontinentalclub.com',
+        port: '',
+        pathname: '/**',
       }
     ]
   }
