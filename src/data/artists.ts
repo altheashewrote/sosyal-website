@@ -396,5 +396,47 @@ export const ArtistList: Artist[] = [
         artistName: "OlRazzleDazzlee",
         artistGenre: "Dubstep",
         artistYear: 2,
-    }
+  },
+  {
+    artistId: 68,
+    artistName: "Beastboi",
+    artistGenre: "Hardstyle",
+    artistYear: 2,
+  },
+  {
+    artistId: 69,
+    artistName: "Lizdek",
+    artistGenre: "Trap",
+    artistYear: 2,
+  },
+  {
+    artistId: 70,
+    artistName: "Home By Dawn",
+    artistGenre: "Progressive House",
+    artistYear: 2,
+  },
+  {
+    artistId: 71,
+    artistName: "Nikademis",
+    artistGenre: "Dubstep",
+    artistYear: 2,
+  },
+  {
+    artistId: 72,
+    artistName: "Yanebun",
+    artistGenre: "Hard Techno",
+    artistYear: 2,
+  },
+  {
+    artistId: 73,
+    artistName: "Norae",
+    artistGenre: "Trap",
+    artistYear: 2,
+  },
+  {
+    artistId: 74,
+    artistName: "Mdkl",
+    artistGenre: "Hard Techno",
+    artistYear: 2,
+  }
 ]
