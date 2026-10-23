@@ -17,8 +17,8 @@ export default async function Events() {
                 <VideoBackgroundEvents/>
                 {nearestEvent && <FeaturedEventHero event={nearestEvent} />}
             </main>
-            <section className="relative w-screen min-h-screen pt-15 bg-slic3r-black flex flex-col overflow-hidden px-15 items-center gap-5 pb-15">
-                <div className="relative w-screen flex flex-col md:flex-row gap-5 md:gap-0 justify-between px-15">
+            <section className="relative w-screen min-h-screen pt-15 bg-slic3r-black flex flex-col overflow-hidden px-5 md:px-15 items-center gap-5 pb-15">
+                <div className="relative w-screen flex flex-col md:flex-row gap-5 md:gap-0 justify-between px-5 md:px-15">
                     <div className="flex flex-col gap-2">
                         <h3 className="font-outersans font-medium tracking-[-0.5] text-5xl text-ara-white">UPCOMING EVENTS</h3> 
                         <p className='font-helvetica tracking-[-0.3] text-xl max-w-150 pt-2 text-ara-white text-pretty leading-[1.3]'>Your next bender awaits. <br/> Events are updated every 30 minutes.</p>
@@ -28,7 +28,7 @@ export default async function Events() {
                     </div>
 
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pt-5 gap-5 relative w-screen px-15">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pt-5 gap-5 relative w-screen px-5 md:px-15">
                     {upcomingEvents.map((event) => (
                         <EventCard key={event.id} event={event} />
                     ))}
