@@ -1,6 +1,7 @@
 export interface Artist {
-    readonly artistId: number,
-    artistName: string,
-    artistGenre: string,
-    artistYear: number,
+    id: string
+    name: string
+    year: number
+    genre: string
+    link?: string
 }

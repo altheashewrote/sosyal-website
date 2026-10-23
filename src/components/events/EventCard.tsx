@@ -17,7 +17,7 @@ export default function EventCard({ event }: { event: Event }) {
     const eventDate = new Date(event.start);
     const today = new Date();
 
-    const eventUrl = event.source === 'tixr' ? event.url : `https://posh.vip/e/${event.url}?t=sosyal`;
+    const eventUrl = event.url
 
     const handleClick = () => {
         fbq.event('EventClick', {
@@ -28,8 +28,8 @@ export default function EventCard({ event }: { event: Event }) {
     }
 
     return (
-        <div className="flex flex-col border border-ara-white overflow-hidden p-5 gap-3">
-            <div className="w-full relative group h-84">
+        <div className="flex flex-col bg-niteharts-grey rounded-sm overflow-hidden p-5 gap-3">
+            <div className="w-full relative group aspect-[4/5] rounded-sm overflow-hidden">
                 <Image
             src={event.flyer}
             alt={event.name}
@@ -37,9 +37,11 @@ export default function EventCard({ event }: { event: Event }) {
             className="object-cover"
             />
             </div>
-            <p className="font-helvetica font-medium text-sm uppercase text-ara-white">{date}</p>
-            <h3 className="font-helvetica-condensed text-2xl font-bold text-md uppercase text-ara-white">{event.name}</h3>
-           <Link href={eventUrl}><Button intent="secondary" size="md" className="uppercase">BUY TICKETS</Button></Link>
+            <div className="flex flex-col gap-1">
+                <p className="font-jbm font-medium text-sm uppercase text-ara-white pt-2">{date}</p>
+            <h3 className="font-helvetica text-2xl font-bold text-md uppercase text-ara-white">{event.name}</h3>
+            </div>
+           <Link href={eventUrl}><Button intent="primary" size="md">Buy Tickets</Button></Link>
         </div>
     )
 }
