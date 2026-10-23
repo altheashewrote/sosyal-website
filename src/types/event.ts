@@ -27,5 +27,5 @@ export interface Event {
     shortDescription: string | null
     description: string | null
     song: Song | null
-    source: 'posh' | 'tixr'
+    source: 'sheet'
 }
