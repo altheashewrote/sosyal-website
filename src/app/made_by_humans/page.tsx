@@ -10,8 +10,8 @@ export default function MadeByHumans() {
         <div className="flex flex-col min-h-screen items-center bg-slic3r-black font-sans dark:bg-slic3r-black">
             <main className="relative w-screen">
                 <Image
-                src="/images/events/PURG_01.JPG"
-                alt="Crowd at LNY 2026"
+                src="/images/events/PURG_01.jpg"
+                alt="Crowd view of Purgatory, 10/09/2026."
                 fill
                 className="object-cover grayscale brightness-50"
                 />

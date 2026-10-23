@@ -10,7 +10,7 @@ export default function About() {
         <div className="flex flex-col min-h-screen items-center bg-slic3r-black font-sans dark:bg-slic3r-black">
             <main className="relative w-screen">
                 <Image
-                src="/images/events/HTOK_02.JPG"
+                src="/images/events/HTOK_02.jpg"
                 alt="Crowd at LNY 2026"
                 fill
                 className="object-cover grayscale brightness-50"
