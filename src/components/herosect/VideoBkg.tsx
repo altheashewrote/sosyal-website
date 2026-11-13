@@ -2,11 +2,9 @@
 import { useRef, useState } from 'react';
 
 const videos = [
-    'https://res.cloudinary.com/dmw0dgiw0/video/upload/v1774513638/C1825_Proxy_tcwb7m.mov',
-    'https://res.cloudinary.com/dmw0dgiw0/video/upload/v1774513622/C1771_Proxy_krsh9n.mov',
-    'https://res.cloudinary.com/dmw0dgiw0/video/upload/v1774941372/ARA_VIDEO_PROMO-2_rmcfg2.mov',
-    'https://res.cloudinary.com/dmw0dgiw0/video/upload/v1774941512/Untitled_d2irjl.mp4',
-    'https://res.cloudinary.com/dmw0dgiw0/video/upload/v1774513624/StudiosClip-ARA-1_w4b4uc.mov',
+    'https://res.cloudinary.com/q3ilhui6/video/upload/v1792583323/CHANSE_BASSCITY_10SEC.mp4',
+    'https://res.cloudinary.com/q3ilhui6/video/upload/v1792583321/TWOMODELS_VAN_10SEC.mp4',
+    'https://res.cloudinary.com/q3ilhui6/video/upload/v1792583319/CHRIS_AND_ARA_HTOK_10SEC.mp4',
 ]
 
 export default function VideoBackground() {
@@ -26,7 +24,7 @@ export default function VideoBackground() {
       muted
       playsInline
       onEnded={handleEnded}
-      className="absolute inset-0 w-full h-full object-cover saturate-120"
+      className="absolute inset-0 w-full h-full object-cover saturate-150"
     />
   )
 }
